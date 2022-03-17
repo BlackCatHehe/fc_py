@@ -1,4 +1,4 @@
-function getplayurl(_in_data) {
+function getvurl(_in_data) {
   if (_in_data.indexOf("{") < 0) {
     var encode_version = "jsjiami.com.v5",
       unthu = "__0xb5aef",
@@ -135,11 +135,14 @@ function getplayurl(_in_data) {
       hf_panurl = String[_0x2c0f("0x0", "1JYE")](mn) + hf_panurl;
     }
     _in_data = hf_panurl;
+
     encode_version = "jsjiami.com.v5";
   }
   return _in_data;
 }
 
-const purl =
-  "abe6e2d9a597d6a9d5d4cf9da1cfcfcc9f9f9e969c9a9698c59295bfbdbebb8f878b88bab6b8b78274bebab1bfae7b6db9abb9b2a8a5a57264a3b3a5af9b9eaa9a9a6759979397625460a08e915c4e9596898a564895888d889696814d3f7a7d493b7975774436797b6f733e30703b2d68392a7773767568";
-console.log(getplayurl(purl));
+console.log(
+  getvurl(
+    "dd1814d41c090c1806120ffdd0d2cfcac9d0c8c9c7cac5cac3c2c0c0c6bfc1bcc2bbb9ccb7a9b3e1b9b0b3b5b1b5acaeabaeacaea7a6a4a4aaa3a5a0a69f9d9baf9a8cd5cac8ccd8c0988f929490948b8d8a8d8b8d868583838982847f857e7c7a8e796b7e7779747a7371846f619ca39d9da47c6759a2979599859c9c8b9a8f8d919d6c57495595836651438a8b7e488c7f847f8c7f41733f428782533e30503b2d48392a7773767568"
+  )
+);
